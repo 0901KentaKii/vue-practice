@@ -1,7 +1,5 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 
-// Vue インスタンスを作成して #app 要素にマウント
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+// Vue 3 の createApp を使ってマウント
+createApp(App).mount('#app')
